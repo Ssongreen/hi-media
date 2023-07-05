@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  background-color: #2196F3;
+  padding: 10px;
+  display: grid;
+  /* column-gap: 5px; */
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  height: 500px;
+  align-items: center;
+  align-items: start;
+
+}
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h1>display: grid</h1>
+
+<p>Use display: grid; to make a block-level grid container:</p>
+
+<div class="grid-container">
+  <div class="grid-item1">1</div>
+  <div class="grid-item2">2</div>
+  <div class="grid-item3">3</div>  
+  <div class="grid-item4">4</div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체 축약 표현</title>
+</head>
+
+<body>
+  <h1>객체 축약 표현</h1>
+
+  <script>
+    const obj = {
+      key: '값',
+    };
+
+
+    const name = '홍씨';
+    const age = 16;
+
+
+    // const info = {
+    //   name: name,
+    //   age:age
+    // };
+
+    
+    
+    // 축약 표현
+    const info = {
+      name,
+      age
+    };
+    document.write(info);
+    document.write(name);
+    document.write(info.name);
+    document.write(info['name']);
+
+    /**
+     * 값이 익명 함수인 경우
+     * 메서드 객체의 property 값으로 선언된 함수
+     * **/
+
+    // const say ={
+    //   hi: function hello(){
+    //     document.write('good, to see you?');
+    //   }
+    // };
+    // document.write(say)
+    // say.hi();
+
+    const say ={
+      hi (){
+        document.write('good, to see you?');
+      }
+    };
+    document.write(say)
+    say.hi();
+
+
+  </script>
+</body>
+
+</html>

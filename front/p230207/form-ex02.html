@@ -1,0 +1,68 @@
+<!-- <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+<!DOCTYPE html>
+<lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그</title>
+  </head>
+  <body>
+    <h1>폼 태그</h1>
+    <form action="index.html" method="get">
+      <fieldset>
+        <input type="reset" value="다시쓰기">
+        <legend>가입 양식서
+        <div>
+          <label for="user_name">이름</label>
+          <input type="text" id="user_name" name="user_name">
+        </fieldset>
+        </div>
+        
+        <div>
+          <label for="location">거주지역</label><br>
+          <select name="location" id="location" size="3" multiple>
+            <option value="seoul" selected>서울</option>
+            <option value="geoun">경기</option>
+            <option value="incheon">인천</option>
+            <option value="jeju">제주</option>
+          </select>
+        </div>
+        <div>
+          <label for="">간단한 소개: </label><br>
+          <textarea name="info" id="info" cols="40" rows="8"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="전송">
+
+
+      </div>
+
+
+
+    </form>
+  </body>
+
+  </html>

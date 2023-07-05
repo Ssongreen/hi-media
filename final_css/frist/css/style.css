@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Default CSS */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
+    background-color: #fff;
+    color: #222;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* Common CSS */
+.headline-share {
+    text-align: center;
+}
+
+.headline-share h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.headline-share h1::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 4px;
+    /* background-color: blue; */
+    background: linear-gradient(to right,  green, yellow);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* display: none; */
+}
+
+/* .headline-share hr {
+    width: 200px;
+    height: 5px;
+    background: linear-gradient(to right,  #f737bd, #f2b9fa);
+    border: none;
+} */
+
+.font-noto {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+section.portfolio {
+    position: relative;
+    /* background: url(../image/background.png);
+    background-position: center center;
+    opacity: 0.25; */
+    display: grid;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
+}
+
+section.portfolio::after {
+    content: '';
+    background: url(../image/background.png);
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.25;
+}
+
+.items {
+    width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.item {
+    /* border: 1px solid #000; */
+}
+
+aside.item b {
+    font-weight: normal;
+    color: crimson;
+    font-size: 14px;
+}
+
+aside.item h2 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+aside.item .portfolio-info span {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.item.thum .photo {
+    /* border: 1px solid red; */
+    height: 400px;
+    /* background-image: url(../image/web-portfolio-01.jpg); */
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px;
+
+    /* 
+    [box-shadow]
+    1) offset-x | offset-y | blur-radius | spread-radius | color
+    2) spread-radius : 양수 값은 그림자가 더 커짐
+                       음수 값은 그림자가 줄어듦
+    */
+    box-shadow: 0px 15px 45px -10px;
+    transition: 1s;
+}
+
+.item.thum:hover .photo {
+    background-position: bottom;
+}
+
+.item.thum:nth-of-type(1) .photo {
+    background-image: url(../image/web-portfolio-01.jpg);
+}
+.item.thum:nth-of-type(2) .photo {
+    background-image: url(../image/web-portfolio-02.jpg);
+}
+.item.thum:nth-of-type(3) .photo {
+    background-image: url(../image/web-portfolio-03.jpg);
+}
+
+.item.thum span {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.item.thum span .btn-view {
+    background-color: red;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.item.thum span .btn-view.mobile {
+    background-color: royalblue;
+}
+
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+    margin-left: 0;
+    width: 60%;
+    height: 60%;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.featherlight iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.featherlight .featherlight-close-icon{
+    left:20px;
+    top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #989292;
+    /* background-color: red; */
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backgound</title>
+</head>
+<style>
+  .box {
+    border: 3px solid blue;
+    padding: 30px;
+    margin: 30px;
+    width: 500px;
+    height: 100px;
+    color: whitesmoke;
+    background: url(img/boy1280.jpg) no-repeat 50% 50%;
+  }
+  .box2{
+    font-style: serif;
+    /* 배경 이미지 크기
+    -가로, 세로 꽉 차게(비율 깨짐) 
+    ef) background-size: 100% 100%;
+    -가로만 맞추고 세로는 비율 유지
+    ef) background-size: 100% auto;
+    -가로는 비율 세로는 맞추고
+    ef) background-size: auto 100%;
+    -이미지 다 표현 비율은 맞춰서
+    ef) background-size: contain;
+    - 이미지 깨지지 않는 정도에서 가장크게 보여지게 함
+      대신, 이미지가 짤리는 부분이 생김
+    background-size: cover;
+    */
+    background-size: cover;
+  }
+</style>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quae quas laudantium perspiciatis dignissimos natus illo ipsum, soluta ducimus aspernatur quos quam reiciendis hic. Maiores aliquam deleniti qui minus exercitationem!</div>
+  <br>
+  <div class="box box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quae quas laudantium perspiciatis dignissimos natus illo ipsum, soluta ducimus aspernatur quos quam reiciendis hic. Maiores aliquam deleniti qui minus exercitationem!</div>
+</body>
+</html>

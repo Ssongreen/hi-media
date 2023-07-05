@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#wrap {
+  width: 300px;
+}
+
+#navigation {
+  width: 150px;
+  background-color: cornflowerblue;
+}
+
+#main {
+  width: 150px;
+  /* background-color: gray; */
+}
+#main::after {
+  /* rule
+  overflow:hidden; */
+  /* rule 2 */
+  content: ' ';
+  display: block;
+  clear: both;
+}
+#main #left-meru {
+  float: left;
+  width: 50px;
+  height: 150px;
+  background-color: antiquewhite;
+}
+
+#main #content {
+  /* float: right; */
+  width: 250px;
+  height: 150px;
+  background-color: darkmagenta;
+}
+
+#main #content #contain {
+  background-color: gold;
+  height: 100px;
+}
+
+#footer {
+  background-color: limegreen;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>샐랙터</title>
+  <style>
+    #header h1 em{
+      background-color: orange;
+    }
+    #header p+p{
+      border: 3px solid black;
+    }
+    #contiiner+p{
+      font-style: italic;
+    }
+    #container #lead {
+      background-color: lime;
+    }
+    #container div.lead{
+      color: red;
+    }
+    #container ol~p{
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>css <em>selector</em></h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sit deleniti possimus eaque, pariatur a provident accusamus aliquam, beatae consequuntur, rem ullam. Culpa voluptas obcaecati officiis dolore nostrum ullam aliquid?</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sit deleniti possimus eaque, pariatur a provident accusamus aliquam, beatae consequuntur, rem ullam. Culpa voluptas obcaecati officiis dolore nostrum ullam aliquid?</p>
+    </div>
+    <div id="container">
+      <p id="lead">Lorem ipsum dolor sit amet.</p>
+      <p class="lead">Lorem ipsum dolor sit amet.</p>
+      <div class="lead">Lorem ipsum dolor sit amet.</div>
+      <ol class="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ol>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rerum voluptatum sit. Porro obcaecati natus nihil, sequi rerum saepe eveniet quae doloremque, aperiam ipsam cumque veritatis distinctio laboriosam facere et!</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>container 형제 p tag</p>
+  </div>
+  
+</body>
+</html>

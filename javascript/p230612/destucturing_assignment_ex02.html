@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구조 분해 할당</title>
+</head>
+
+<body>
+  <h1>구조 분해 할당</h1>
+  <script>
+    const info = {
+      name: '홍씨',
+      age: 25,
+
+    };
+
+    // function show_info(args) {
+    //   console.log(`이름: ${args.name}`);
+    //   console.log(`나이: ${args.age}`);
+    // }
+
+    // function show_info({ name, age }) {
+    //   console.log(`이름: ${name}`);
+    //   console.log(`나이: ${age}`);
+    // };
+
+    function show_info({ name: dear, age: old }) {
+      console.log(`이름: ${dear}`);
+      console.log(`나이: ${old}`);
+    };
+
+
+    show_info(info);
+  </script>
+</body>
+
+</html>

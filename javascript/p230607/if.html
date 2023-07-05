@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제어문</title>
+</head>
+<body>
+    <h1>조건문 : if문 </h1>
+    <script>
+        /**
+         * if{
+         *  명령어
+         * }else{
+         *  명령어
+         * }
+         * 
+         * if{
+         *  명령어;
+         * }else if{
+         *  명령어;
+         * }else{
+         *  명령어
+         * }
+         * 
+         * **/
+        var num = 4
+        if(num % 2 ==1)
+            document.write('홀')
+        else
+            document.write('짝')
+        
+        //삼항 연산자
+
+        var ar = (num % 2 ==1 ) ? "홀" : " 짝";
+        document.write(ar);
+
+    </script>
+</body>
+</html>

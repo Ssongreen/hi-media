@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backgound</title>
+</head>
+<style>
+  .box{
+    border: 3px double navy;
+    padding: 20px;
+    background-color: lightblue;
+    background-image: url(img/boy1280.jpg);
+    width: 1800px;
+    height: 1000px;
+    clear: both;
+    /* 반복해서 안나오게 
+    repeat / no-repeat / repeat-x / repeat-y */
+    /* background-repeat: no-repeat ;
+
+    /* 위치 지정 (세밀한 이동은 x)
+                    가로 * 세로: 
+    - left/center/right * top/ center/bottom 
+    */
+    /* 수평(왼,오) 수직(위/아래) 
+      - left top          0%      0% 
+      - center center   50%     50%
+      - right bottom  100%    100%
+        수평(왼/오) x 수직(위/아래)
+      -left top         0     0
+      */
+
+    /* background-position: 50% 50%; */
+    /* 스크롤하면 화면에서 사라짐
+    background0attachment: scroll;
+     */
+     /* background-attachment: fixed; */
+     background: skyblue url(img/boy1280.jpg) no-repeat scroll 50% 50%;
+  }
+</style>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi qui nemo sed ipsa cumque tempora deserunt. Animi ipsam, minima laborum ipsa vel voluptatibus, vitae earum expedita, magnam consequuntur repellat?</div>
+</body>
+</html>

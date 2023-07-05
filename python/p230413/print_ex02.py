@@ -1,0 +1,5 @@
+note = open("D:\\web\\python\\p230413\\test.txet", "w")
+print("one")
+print("Two", file = note)
+print("three")
+note .close()

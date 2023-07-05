@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selector pretect</title>
+  <style>
+    span{
+      color: teal;
+    }
+    div>span{
+      color: coral;
+    }
+    #ex-ccs span{
+      color: darkred;
+    }
+    .second-tag span{
+      background-color: #eeff3b ;
+    }
+    h1,h2{
+      color:orange;
+    }
+  </style>
+</head>
+<body>
+  <div id="ex-css">
+    <h1>처음 h1</h1>
+    <div class="first-tag">
+      <span>span tag1</span>
+      <p>
+        <span>span tag2</span>
+      </p>
+    </div>
+    <span>span tag3</span>
+  </div>
+<!--  -->
+  <div class="second-tag">
+    <h1>두번 h1</h1>
+    <h2>
+      <span>span tag4</span>
+    </h2>
+    <h2>heading 2</h2>
+  </div>
+  <!--  -->
+  <span>span tag5</span>
+  <!--  -->
+
+</body>
+</html>

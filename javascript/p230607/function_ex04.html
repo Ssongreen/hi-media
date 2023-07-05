@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용자 정의 함수</title>
+</head>
+
+<body>
+  <h1>사용자 정의 함수</h1>
+  <script>
+    /**
+     * 매개변수 있고, 리턴 있음
+     * 매개변수 있고, 리턴 없음
+     * 매개변수 없음, 리턴 있음
+     * 매개변수 없음, 리턴 없음
+     * 
+     * **/
+
+    // 2. 함수 호출
+    info('홍씨', 26);
+    info();
+    info('박');
+    info('이',56,'goodday');
+
+    // 1. 함수 정의
+    // 매개 변수 있고, 리턴 없다
+    // 특징 
+    // - 매개변수와 인수의 자료형(타입)이 일치하는지 검사하지 않음
+    // - 매개변수의 개수와 인수의 개수가 같은지 검새하지 않음
+    // - 매개변수의 개수가 인수의 개수보다 적으면 undefined로 저장
+    function info(name, age) {
+      console.log('name', name);
+      console.log('age', age);
+      console.log('<br>');
+    }
+  </script>
+</body>
+
+</html>

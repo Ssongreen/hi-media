@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중첩 함수</title>
+</head>
+
+<body>
+  <h1>중첩 함수</h1>
+  <script>
+    /**
+     * 중첩 함수 
+     * 함수 정의 내 함수 정의
+     * **/
+    //함수 선언식
+    function outer() {
+      console.log('outer 시작');
+
+      function inner(name) {
+        console.log('inner 시작');
+        console.log(name, 'nice meet you');
+        console.log('inner 종료');
+      }
+      // inner('고정');
+
+      console.log('outer 종료');
+      return inner;
+    };
+
+
+    //함수 호출
+    const result = outer();
+    result('홍씨');
+  </script>
+
+</body>
+
+</html>

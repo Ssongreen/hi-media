@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 태그</title>
+</head>
+<body>
+  <h1>폼 태그</h1>
+  <form action="index.html" autocomplete="off">
+    <fieldset>
+      <legend>Html5 form</legend>
+    <div>
+      <label for="user_name">이름</label>
+        <input type="text"  id="user_name" name="user_name" placeholder="이름이 뭐양" autofocus  required>
+    </div>
+    <div>
+      <label for="user_emal">이메일</label>
+      <input type="email" name="user_emal" id="user_emal" placeholder="xxxx@sssss.com">
+    </div>
+    <div>
+      <label for="user_url">웹사이트 주소</label>
+      <input type="url" id="user_url" name="user_url">
+    </div>
+    <div>
+      <label for="order">주문수량</label>
+      <input type="number" id="order" name="order" min="0" max="10" value="1" disabled>
+    </div>
+    <label for="user_date">제출일</label>
+    <input type="date" id="user_date" name="user_date">
+    </div>
+    <div>
+      <label for="user_color"></label>
+      <input type="color" id="user_color" name="user_color"> 
+
+    </div>
+    </fieldset>
+    <input type="submit"value="가입">
+  </form>
+</body>
+</html>

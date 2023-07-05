@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수 선언식, 함수 표현식 호출 위치</title>
+</head>
+<body>
+  <h1>함수 선언식, 함수 표현식 호출 위치</h1>
+  <script>
+    /**
+     * interpriter 
+     * 
+     * 함수 선언식 일반 함수, 이름 있는 함수
+     * 함수 정의 전에 호출 가능
+     * 함수 호출 시기에 있어 제한 ㅇ벗음
+     * **/
+
+    // hi('박씨');
+    function hi(args){
+      console.log(args ,' hello ? ');
+    }
+    
+    //함수 표현식 
+    //익명 함수를 변수에 저장
+    //함수 정의 후 호출 가능 --> 호출 시기 제한
+    var re_hi= function (args){
+      console.log(args,"good to see you")
+    }
+
+    hi('홍씨');
+    re_hi('오리');
+    console.log('re_hi');
+    console.log('script 실행 완룡');
+  </script>
+</body>
+</html>

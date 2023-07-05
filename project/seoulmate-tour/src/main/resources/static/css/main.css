@@ -1,0 +1,80 @@
+@charset "utf-8";
+.center{width:1200px;margin: 0 auto;}
+/* header */
+header{border-bottom: 2px solid #e4f0f9;box-sizing: border-box; min-width: 1200px;}
+header .center{display: flex;height:100px;}
+header h1{margin-top: 10px;}
+header h1 a{display: block;font-size: 8px;width: 100px;line-height:50px; text-align: center; } 
+header h1 a img{width: 100px; margin-bottom: -25px;}
+header div.gnb{display: flex;justify-content:space-between;font-size: 20px;width: 700px;margin-left: 200px; height: 100px;line-height: 100px;}
+header div.gnb .drop{position: relative;}
+header div.gnb .drop .down a:hover{color:#e4f0f9}
+header div.gnb .down{display: none;  padding: 15px; width: 120px;background-color: rgba(70, 48, 48, 0.7);color:#fff;left:-20px; text-align: center;}
+header div.gnb .drop:hover .down{display: block; position: absolute;z-index:5;}
+header div.gnb .drop:nth-of-type(2) .down{margin-left: 17px;}
+header div.gnb .drop:nth-of-type(3) .down{margin-left: -15px;}
+
+/* container */
+.container .location {text-align:right;position: relative; right: 100px; margin-top: 80px;}
+.container .location .ar{color: #777; font-weight: 100;}
+
+.container h2{text-align: center;margin: 100px 0; font-size: 35px;}
+.container ol{display: flex;justify-content: space-between;text-align: center;font-size: 20px;}
+.container ol li iframe{width: 350px;}
+.container ol li div{background-color: #a2d6f9;height: 30px;line-height: 30px; margin-bottom: 10px;}
+.container p { font-family:"NanumBarunGothic";}
+
+/* container-list */
+#list h2{margin-bottom: 50px;}
+#list .search{width:400px ;margin: 50px auto;}
+#list .search input{font-weight: 300;font-family:"NanumBarunGothic"}
+#list .search button{background-color: #a2d6f9;padding: 0;margin: 0;border-radius: 10%;}
+#list .search button>img{width: 20px;}
+#list table{font-weight: 300; font-family:"NanumBarunGothic";text-align: center;font-size: 16px;}
+#list table .delete{width:60px;margin:auto}
+#list table .delete button{text-align:center}
+
+/* booking/addForm */
+#booking-form{width: 800px; height: 750px; margin: 100px auto; padding: 50px; box-sizing: border-box; border-radius: 15%; text-align: center;
+  font-family: "NanumBarunGothic"; background-color: #e4f0f9;}
+#booking-form .description{height: 100px;line-height: 25px;}
+#booking-form .description span{font-family:"LINESeedKR-Bd";}
+#booking-form .description div.scroll{height: 100px;overflow: hidden;overflow-y: scroll; text-align: left;}
+#booking-form .description div.form-check{text-align: right;}
+#booking-form .description .form-check-label{font-family: "NanumBarunGothic";font-size: 16px ;}
+#booking-form label{font-family:"LINESeedKR-Bd";font-size: 20px;}
+#booking-form .datepicker table{width: 280px;margin: 30px auto;}
+#booking-form .datepicker .datepicker-switch{font-size: 20px;margin-bottom: 20px;}
+#booking-form #datepicker{height: 300px;border-radius: 10%;}
+#booking-form span{line-height: 38px;font-size: 20px;margin: 0;padding: 0;}
+#booking-form .button{width: 500px;margin: -20px auto;}
+#booking-form .button button:nth-of-type(2){
+  background-color: #4283d1;color: #fff;
+}
+
+/* inquiry/addform */
+#inquiry-form.container form{box-sizing: border-box;}
+#inquiry-form.container form{width: 1000px; height: 750px; margin: 100px auto; padding: 50px; box-sizing: border-box; border-radius: 15%; text-align: center; font-family: "NanumBarunGothic"; background-color: #e4f0f9;}
+#inquiry-form label{font-family:"LINESeedKR-Bd";font-size: 20px;width: 100px;}
+#inquiry-form span{line-height: 38px;font-size: 20px;margin: 0;padding: 0;}
+#inquiry-form .box{width: 300px;}
+#inquiry-form .phone{width: 100px;}
+#inquiry-form .button input:nth-of-type(2){background-color: #4283d1;color: #fff;}
+
+
+ /*join & privacy*/
+ .join,.prv{width: 800px; margin: 50px auto;font-family:"NanumBarunGothic"}
+ .join h2,.prv h2{margin: 50px}
+ .join .mm,.prv .mm{margin:15px 0}
+ .back_btn{display: block;margin: 100px auto 0;}
+ 
+/* footer */
+footer{background-color: #022f54;margin-top: 200px;color:#fff;font-weight: 300; font-family:"NanumBarunGothic";min-width: 1200px;}
+footer .center{padding: 60px 0;display: flex;justify-content: space-between;}
+footer .left{display: flex;}
+footer .leftwrap{margin-left: 50px;}
+footer p.logo img{width: 100px;}
+footer ul{display: flex;width: 200px;justify-content:space-between;margin-bottom: 30px;}
+footer .right ul>li{height: 70px;}
+footer .right img{height: 50px;}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수 인수로 함수명 가능</title>
+</head>
+<body>
+  <h1>함수 인수로 함수명 가능</h1>
+  <script>
+    //함수 정의
+    //함수 선언식
+    function hello(){
+      console.log('hello');
+    }
+    function hi(){
+      console.log('hi');
+    }
+    function execute(args){
+      console.log('[시작]')
+      args()
+      console.log('[종료]')
+    }
+    execute(hello);
+    execute(hi);
+
+    //함수 표현식
+    // 익명 함수를 변수에 저장
+    // 함수 정의 후 호출 가능 - > 호출 시기 제한
+    execute(function (){
+      console.log('익명 함수');
+    });
+    execute= (()=> console.log('익명함수'))
+
+    //화살표 함수
+    //function 키워드 제외
+    // 문법 
+    //(매개 변수1, 매개변수2)=>{
+    // 명령어1
+    //}
+    //문법 2 
+    //매개변수 1개일 경우- ()생략가능
+    //body 내 명령어가 1개일 경우 - {} 생략가능, 무조건 return
+    // 매개변수 = > 명령어
+    //매개 변수 =>{
+      // 명령어;
+    //} 
+    const arrow_fun = (args) => {
+      console.log(args, '만나서 반가워')
+    };
+
+    arrow_fun('이미자');
+    console.log('re_h1() 실행');
+    console.log('re_h1() 실행 완료');
+  </script>
+
+</body>
+</html>

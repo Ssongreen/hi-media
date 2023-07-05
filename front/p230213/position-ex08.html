@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position-absoulte</title>
+  <style> 
+  /다른 포지션으로 해보기
+    .content {
+      background-color: #ff0;
+      height: 1000px;
+    }
+    .a {
+      background-color: #eee;
+    }
+    .a .here {
+      position: fixed;
+      background-color: #000;
+      color: #fff;
+    }
+    .b {
+      background-color: #999;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="a">
+      A Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quidem veniam dolorem, harum, perferendis quia autem ut perspiciatis necessitatibus doloremque aut possimus saepe, error reprehenderit quisquam. Eius minima numquam voluptas!
+      <div class="here">
+        here
+      </div>
+    </div>
+    <div class="b">B Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non omnis dolorem veritatis consequuntur facere repellendus dolores, saepe natus numquam quisquam rem recusandae dolor ea in possimus veniam iure. Ut, sint!</div>
+  </div>
+
+  
+</body>
+</html>

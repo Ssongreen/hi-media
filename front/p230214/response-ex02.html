@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 웹</title>
+  <style>
+    #wrap{
+      width: 600px;
+      margin: 0 auto;
+    }
+    /* 세로가 길 때 */
+    @media screen and (orientation: portrait) {
+      body{
+        background-color: gray;
+      }
+      h1::after{
+        content: '세로가 길어용!';
+        font-size: 1.5em;
+        color: green;
+      }
+    }
+    /* 가로가 길때  */
+    @media screen and (orientation: landscape) {
+      body{
+        background-color: green;
+      }
+      h1::before{
+        content: '가로가 길어용';
+        font-size: 1.5em;
+        color: wheat;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>LOGO</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui alias, deserunt autem corporis perspiciatis culpa, dolor molestias sed aspernatur, eaque nulla illo quisquam. Voluptatum rerum voluptas nostrum eius minus?</div>
+  </div>
+</body>
+</html>

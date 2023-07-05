@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* 초기화 */
+ul, ol{
+  list-style: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+/* 작업 */
+
+/* #wrap{
+} */
+#header ul::after{
+  content: '';
+  display: block;
+  clear: left;
+}
+#header ul li{
+  float: left;
+}
+#header ul li a{
+  display: block;
+  padding: 10px 20px;
+  border: 3px solid skyblue;
+  background-color: skyblue;
+  margin-right: 3px;
+  text-decoration: none;
+}
+

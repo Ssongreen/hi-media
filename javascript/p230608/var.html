@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수 종류</title>
+</head>
+
+<body>
+  <h1>변수 종류</h1>
+  <script>
+    /**
+     * scope
+     * 전역 스코프
+     * script 내 선언된 변수
+     * 어디서든지 접근 가능
+     * 
+     * 지역 스코프
+     * {}내에 선언된 변수
+     * 해당 영역 내에서만 접근 가능
+     * function level scope - var
+     * block level scop - let
+     * **/
+    /**
+     * 변수 선언 시 키워드 var let const
+     * var은 함수 레벨 스코프 let 과 const는 블럭 레벨 스코프
+     * var로 선언된 변수는 선언 전에 접근 가능하지만, let과 const는 불가능(에러 발생)
+     * var은 이미 선언된 이름과 같은 이름의 변수를 여러 개 선언 가능하지만, let 과 const는 불가능
+     * var과 let은 변수 선언과 동시에 초기화를 하지 않아도 되지만, const는 반드시 초기값을 할당
+     * var과 let은 값 변경이 가능하지만, const는 불가능
+     * **/
+    console.log('변수 선언전');
+    console.log(a_var);
+    // console.log(a_let);
+    // console.log(a_const);
+    var a_var;
+    let a_let;
+    //constant 변수 선언과 동시에초기화
+    //리터럴 literal : 5 'h1'
+    const a_sonst = 11;
+
+    console.log('변수 선언후');
+    console.log(a_var);
+    console.log(a_let);
+    // console.log(a_const);
+    for (let i = 0; i < 5; i++) {
+      console.log(i);
+    }
+    
+    for (var i = 0; i < 5; i++) {
+      console.log(i);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo-element</title>
+  <style>
+    /* 가상 element
+    플롯 해제 ::before, after */
+    h1::before{
+      content: "텍스트가 와서 따움표가 와용";
+      color: red;
+    }
+    h1::after{
+      content: "뒤로 와용";
+      color: darkblue;
+    }
+    p::first-line{
+      color: magenta;
+    }
+    p::first-letter{
+      font-size: 2em;
+      font-weight: bold;
+      background-color: olive;
+    }
+    p::selection{
+      background-color: ivory;
+      color: rgba(237, 76, 194, 0.264);
+    }
+  </style>
+
+</head>
+<body>
+  <h1>pseudo-element</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi deserunt et ab quibusdam nihil ullam hic qui laborum molestias deleniti nam, molestiae excepturi alias vitae, quaerat voluptates, soluta facilis.</p>
+
+
+</body>
+</html>

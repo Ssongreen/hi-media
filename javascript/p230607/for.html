@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for문</title>
+</head>
+
+<body>
+  <h1>for</h1>
+  <script>
+    var arr = [2, 4, 6,8];
+    document.write(arr.length);
+    document.write('<br>');
+    document.write(typeof arr);
+    document.write('<br>');
+    document.write(arr);
+
+    document.write('<br>');
+    for (var i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+    /**
+     * for in 문
+     * for (변수 in 객체){
+     * 명령어
+     * }
+     * **/
+
+    for(var n in arr){
+      console.log(n);
+    }
+    /**
+     *  for of 문
+     * for 변수 of 객체 {
+     * 명령어 ;
+     * }
+     * 
+     * **/
+    for(ar of arr){
+      console.log(ar);
+    }
+  </script>
+</body>
+
+</html>

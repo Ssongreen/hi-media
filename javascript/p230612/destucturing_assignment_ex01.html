@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구조 분해 할당</title>
+</head>
+
+<body>
+  <h1>구조 분해 할당</h1>
+  <script>
+    //구조 분해 할당
+    // 배열이나 객체의 속성을 해체하여 개별 변수에 저장
+    const even = [2, 4];
+    const [a, b] = even;
+    console.log(a);
+    console.log(b);
+
+    const odd = [1, 3, 5, 7, 9];
+    const [c, d, ...rest] = odd;
+    console.log(`c:${c} , d:${d}, rest:${rest}`);
+    console.log(rest);
+    // 변수 개수 > 배열의 속성 개수
+    const [e, f, g] = even;
+    console.log(`e:${e},f:${f},g:{g}`);
+    // 변수 개수 배열의 속성 개수
+    // 초기값 설정
+    const [h = 100, i = 200, j = 300] = even;
+    console.log(`h:${h},i:${i},j:${j}`);
+
+    // 객체
+
+    const info = { name: '홍씨', age: 25 };
+    var { name, age } = info;
+    console.log(`name:${name}, age: ${age}`);
+
+    var { name: new_name, age: new_age } = info;
+    console.log(`name: ${new_name}, age:${new_age}`)
+  </script>
+</body>
+
+</html>

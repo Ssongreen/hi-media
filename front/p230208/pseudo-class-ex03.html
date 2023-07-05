@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo-class</title>
+  <style>
+    /* css2 */
+    /* 부모가 누구든 첫 번쨰 li 찾는다. */
+    /* li:first-child {
+      background-color: aqua;
+    } */
+
+    /* css3 */
+  /* 부모가 누구든 첫번 째 li */
+  /* li  :first-of-type{
+    background-color: burlywood;
+  } */
+  /* 부모가 ol, li 중 첫번째 li */
+  /* (부모가 ul인 li 중 마지막 li ul) */
+  ul>li:first-of-type{
+    background-color: dodgerblue;
+  }
+  /* 몇 번째 자식 */
+  /* css2 */
+  li:nth-child(2){
+    background-color: bisque;
+  }
+    /* css3 */
+    ul>li:nth-child(2){
+      color: red;
+    }
+    ul>li:nth-of-type(2n+1){
+      font-style: italic;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>pseudo-class</h1>
+  <ul>
+    <ol>
+      <li>추가된 리스틍1</li>
+      <li>추가된 리스틍2</li>
+    </ol>
+    <li>first</li>
+    <li>second</li>
+    <li>thoerd</li>
+  </ul>
+
+</body>
+</html>

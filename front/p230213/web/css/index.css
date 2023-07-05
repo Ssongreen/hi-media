@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/*----- 초기화(reset) ------*/
+body, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, ul, ol, li, address {
+  margin: 0;
+  padding: 0;
+}
+/* 폰트지정 */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+/* 블릿 제거 */
+ul, ol {
+  list-style: none;
+}
+/* 이미지 */
+img {
+  border: 0;
+  vertical-align: top;
+}
+address, em{
+  font-style: normal;
+}
+strong{
+  font-weight: normal;
+}
+/* 수평선 감추기 */
+hr {
+  display: none;
+}
+/* 텍스트 감추기 */
+.blind {
+  /* [방법 1] */
+  /* display: none; */
+
+  /* [방법 2] */
+  position: absolute;
+  left: 0;
+  top: -999em;
+}
+
+/*----- 바로가기 ------*/
+.skip-nav a:focus {
+  top: 0;
+}
+
+.skip-nav a {
+  background-color: #000080;
+  color: #eee;
+
+  /* 줄간격 : 세로 가운데 정렬 */
+  line-height: 2.5em;
+
+  /* 블록 설정 */
+  display: block;
+
+  position: absolute;
+
+  /* 너비 : 가로 꽉 차게 */
+  width: 100%;
+
+  /* 가로 가운데 */
+  text-align: center;
+
+  /* 화면에 보이지 않게! */
+  left: 0;
+  top: -50px;
+
+  /* layer 중 가장 위에 위치 */
+  z-index: 999;
+}
+
+/*----- wrap 스타일 ------*/
+#wrap {
+  width: 760px;
+  margin: 0 auto;
+}
+
+/*----- header 스타일 ------*/
+#header {
+  position: relative;
+  /* 패딩으로 이미지 영역 확보 */
+  padding-bottom: 200px;
+  /* background: url(../img/b_about.png) no-repeat 0 100%; */
+  background: no-repeat 0 100%;
+}
+#index #header {
+  background-image: url(../img/b_about.png);
+}
+#service #header {
+  background-image: url(../img/b_services.png);
+}
+#portfolio #header {
+  background-image: url(../img/b_portfolio.png);
+}
+#contact #header {
+  background-image: url(../img/b_contact.png);
+}
+#header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .lnb_area{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#header .lnb::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header .lnb li {
+  float: left;
+}
+#header .lnb li a {
+  display: block;
+  height: 50px;
+  background: no-repeat 0 0%;
+  text-indent: -999em;
+}
+#header .lnb li.mm1 a {
+  width: 71px;
+  background-image: url(../img/m_about.gif);
+}
+#header .lnb li.mm2 a {
+  width: 84px;
+  background-image: url(../img/m_services.gif);
+}
+#header .lnb li.mm3 a {
+  width: 95px;
+  background-image: url(../img/m_portfolio.gif);
+}
+#header .lnb li.mm4 a {
+  width: 106px;
+  background-image: url(../img/m_contact.gif);
+}
+#header .lnb li a:hover {
+  background-position: 0 -50px;
+}
+#header .lnb li a.on {
+  background-position: 0 -100px;
+}
+/*----- container 스타일 ------*/
+/*----- 본문 ------*/
+#container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#container .inner {
+  padding: 25px 25px 0;
+}
+#container #content {
+  float: left;
+  width: 480px;
+}
+#container #content h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+/* #container #content .inner {
+  padding: 25px 25px 0;
+} */
+#container #aside {
+  float: right;
+  width: 280px;
+}
+/* #container #aside .inner {
+  padding: 25px 25px 0;
+} */
+#container .bottom-space{
+  margin-bottom: 20px;
+}
+/*----- footer 스타일 ------*/
+#footer {
+  border-top: 1px solid #ccc;
+  padding: 25px 25px 35px;
+  font-size: 0.9em;
+  color: #999;
+}
+#footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #00f;
+}
+#footer::after{
+  /* overflow: hidden; */
+
+  content: '';
+  display: block;
+  clear: both;
+}
+#footer .btm_menu {
+  float: right;
+}
+#footer .btm_menu li {
+  display: inline;
+}
+#footer .copy {
+  float: left;
+}

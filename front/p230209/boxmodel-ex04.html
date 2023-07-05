@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스 모델</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    
+  }
+    .box{
+      border: 3px solid #00f;
+      height: 50px;
+      padding: 10px;
+      margin: 20px;
+      /* inline element를 black level element 처럼 사용 */
+      display: inline-block; 
+      /* 가로 가운데 */
+      text-align: center;
+      /* 세로 가운데 원래 값을 주면 된다1*/
+      line-height: 50px;
+    }
+    .box2{
+      background-color: #ff0;
+      border: 3px solid #f00;
+      /* display: inline; */
+      width : 200px;
+      height: 100px;
+    }
+</style>
+<body>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda eveniet dolore esse amet perspiciatis voluptatibus facere tempora quia dolores aliquam perferendis sapiente, laborum earum nesciunt accusamus minus obcaecati ut!</div>
+  <span class="box">Lorem, ipsum dolor.</span>
+  <span class="box">Lorem, ipsum dolor.</span>
+  <span class="box">Lorem, ipsum dolor.</span>
+  <span class="box">Lorem, ipsum dolor.</span>
+  <div class="box2">Lorem, ipsum.</div>
+  <div class="box2">Lorem, ipsum.</div>
+  <div class="box2">Lorem, ipsum.</div>
+  <div class="box2">Lorem, ipsum.</div>
+</body>
+</html>

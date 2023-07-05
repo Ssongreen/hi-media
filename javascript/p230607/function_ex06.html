@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용자 정의 함수</title>
+</head>
+
+<body>
+  <h1>사용자 정의 함수</h1>
+  <script>
+    //1. 함수 정의
+    function avg() {
+      let total = 0;
+
+      console.log(arguments)
+      for (let i = 0; i < arguments.length; i++) {
+        total += arguments[i];
+
+      }
+      console.log('누적합', total);
+
+      let mean = (total / arguments.length).toFixed(2);
+
+      return mean;
+    }
+
+    //2. 함수 호출
+    var result_avg = avg(2, 3, 5);
+    console.log(result_avg);
+
+  </script>
+</body>
+
+</html>

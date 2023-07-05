@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list</title>
+  <style>
+    .list{
+    /* 블릿(bullet) 제거 
+     list-style: none; */
+    /* 블릿(bullet) 위치 
+       inside / outside */
+    /* list-style-position: inside; */
+    /* 블릿(bullet) 변경 
+      disc /  circle  / square
+      hangul/ hangul-consonant*/
+
+    list-style-type: hangul-consonant;
+   }
+   .list li{
+    background-color:slateblue;
+   }
+  </style>
+</head>
+<body>
+  <h1>bangbang</h1>
+  <div id="wrap">
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <ol class="list">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+  </div>
+</body>
+</html>

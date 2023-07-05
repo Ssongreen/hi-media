@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-quiz03</title>
+</head>
+<!-- 초기화 작업 스타일 -->
+  <style>
+    ul, ol, li {
+      list-style: none;
+    }
+    /* a{
+      text-decoration: none;
+      color: black;
+    } */
+    /* 링크, 방문 합칠 수 있다. 가상 클래스는 방문 형태를 볼 때는*/
+    a:link, :visited{
+      text-decoration: none;
+      color: black;
+      padding: 30px;
+    }
+    div strong, em{
+      font-weight: normal;
+      font-style: normal;
+      /* 초기화 후에 내가 원하는 폰트를 다음에 작성하면 되용 */
+    }
+  </style>
+<body>
+  <div id="wrap">
+    <ul>
+      <li><a href="#">naver</a></li>
+      <li><a href="#">daum</a></li>
+      <li><a href="#">w3c</a></li>
+    </ul>
+  </div>
+  <div><strong>Lorem</strong> <em>ipsum</em>, dolor sit amet consectetur adipisicing elit. Praesentium porro eos, unde quae nam nostrum rerum voluptates, corporis veritatis nulla eligendi pariatur at voluptatibus minima hic doloribus! Quod, a itaque?</div>
+</body>
+</html>

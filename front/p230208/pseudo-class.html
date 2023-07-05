@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 가상클래스 : 상태 */
+    /* unvisited link */
+    /* 
+    링크에만 넣기 text-decoration: none; */
+
+    a:link{
+      color:seagreen;
+      /* text-decoration: none; */
+      text-decoration: none;
+    }
+    /* visited link */
+    a:visited{
+      color: goldenrod;
+    }
+    /* 마우스 올려 놨을 때 */
+    a:hover{
+      color: deeppink;
+    }
+    /* 클릭 했을 때 */
+    a:active{
+      color: mediumblue;
+    }
+    /* 탭키 */
+    a:focus{
+      background-color: khaki;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>pseudo-class</h1>
+  <ol>
+    <li><a href="https://www.naver.com/">네입</a></li>
+    <li><a href="www.daum.net">담음</a></li>
+    <li><a href="www.atom.io">atom</a></li>
+  </ol>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quo voluptatibus dignissimos incidunt sit doloremque, reiciendis alias, sint assumenda optio debitis nesciunt saepe soluta molestias animi veritatis quis ab consectetur.</p>
+</body>
+</html>

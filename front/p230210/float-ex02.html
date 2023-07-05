@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+  #wrap {
+    background-color: green;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #wrap h1 {
+    padding: 15px;
+  }
+
+  #wrap .img_list {
+    /* 2번 overflow를 사용하여 영역을 사용할 수 있게 함 */
+    /* overflow: hidden; */
+  }
+
+  #wrap .img_list::after {
+    /*   1번 float 흐름끊기 방법
+    content: "";
+    display: block;
+    clear: left;
+    */
+  }
+
+  #wrap .thumb {
+    /* float left, right */
+    color: black;
+    border: 3px solid #000;
+    float: left;
+  }
+
+  #wrap .append {
+    color: white;
+    /* 자식으로 멈추는 영역 */
+    clear: both;
+
+  }
+</style>
+
+<body>
+  <h1>float example</h1>
+  <div id="wrap">
+    <div class="img_list">
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/ff0/ff/?text=helloa" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/ff0/ff/?text=hellob" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/ff0/ff/?text=helloc" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/ff0/ff/?text=hellod" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/ff0/ff/?text=helloe" alt="">
+      </div>
+    </div>
+    <p class="append">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem perferendis
+      architecto commodi? Ea, ab earum, saepe, nisi reprehenderit vel corporis blanditiis veniam molestias recusandae
+      eligendi iste at quas facere.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex, suscipit eos, deleniti, ad perferendis expedita
+      modi consequuntur illum sapiente omnis et doloribus aliquam nemo? Facere cumque, similique et doloribus natus
+      quibusdam ipsum incidunt veniam veritatis. Maxime unde eveniet odio dolorum autem non accusamus mollitia quos
+      voluptas possimus. Ad molestias hic asperiores commodi, porro officiis optio, quae earum modi nostrum nam ut id
+      ipsa unde cum. At eveniet distinctio natus quidem iusto. Inventore, laboriosam eum. Voluptatem quaerat, excepturi
+      quam vitae facilis sunt tempora facere dolores nostrum corporis vero fugit commodi ad accusantium eum cumque.
+      Debitis harum error cupiditate doloremque cumque. Veniam esse dolorum ab repudiandae nemo modi, minima minus
+      voluptatum doloremque mollitia nobis vero excepturi! Recusandae sed itaque fuga magnam, ad iusto magni officiis
+      eius eveniet laborum repellat odio aliquid obcaecati qui vero iure veritatis at corrupti consectetur fugit, quod
+      voluptatum reprehenderit sapiente accusamus? Sed magni explicabo veritatis nesciunt dolor quae sint reprehenderit.
+      Consequuntur, iste recusandae dicta, a laudantium deserunt quod sunt soluta enim omnis eveniet commodi explicabo
+      possimus blanditiis optio voluptas ipsa! Minima atque quis deleniti enim pariatur cumque exercitationem in,
+      ducimus molestiae facere necessitatibus laboriosam quisquam nemo laborum iste suscipit maxime debitis possimus.
+      Sit sint dolore voluptas illum iure rem tempore laborum perferendis. Dicta accusamus iusto quibusdam odio, sequi
+      sapiente ullam autem tempore nam sed molestias unde deleniti veniam blanditiis consequuntur nemo asperiores
+      provident? Mollitia in, facere consequatur sequi, ex error reiciendis eum rerum neque molestias dolorum sapiente
+      est voluptatum! Enim nihil doloremque corporis. Maxime, doloremque porro veniam perferendis recusandae quo
+      eligendi numquam? Nemo optio quibusdam consequatur tenetur deserunt, quod tempora aspernatur animi doloribus
+      officia mollitia fuga corrupti possimus incidunt repellendus saepe, facere quis, a labore temporibus quam.
+      Assumenda modi quis corporis repellat sint saepe soluta fuga asperiores perferendis quaerat, vitae, explicabo iste
+      et, ducimus labore possimus! Dolorem perspiciatis deleniti aliquam dolor velit itaque commodi, explicabo magni
+      officiis? Modi eius fugiat omnis sequi adipisci labore perspiciatis hic molestias obcaecati, nobis debitis
+      necessitatibus. Eaque odio expedita quis magni perferendis est non illum beatae, fugit itaque sapiente fugiat nam
+      quos vel omnis, cum repudiandae. Quisquam obcaecati minus eligendi ullam deserunt ea, doloribus magnam optio
+      deleniti quia reprehenderit blanditiis voluptatem incidunt, eveniet at quasi dolore placeat veritatis adipisci
+      dignissimos. Enim id placeat sequi, temporibus odio, consequuntur quia libero doloremque voluptate sit corporis
+      debitis incidunt iure. Perspiciatis mollitia a non quo, maiores pariatur labore dolorem. Repellendus aut obcaecati
+      ipsam at eum dolore cumque voluptatibus reiciendis. Reprehenderit, dolore mollitia? Corrupti aspernatur neque
+      sequi laborum qui ipsum, nesciunt in explicabo obcaecati voluptatem magni alias ratione similique cum, vitae
+      dolorum, ducimus repellendus non praesentium hic tempore ex laudantium modi quas! Dolorum animi similique
+      praesentium eos labore placeat cumque, asperiores vero rem, est, ad error nam? Doloremque at unde molestias? Alias
+      fugit eos consequuntur accusantium, dolore exercitationem, recusandae incidunt aliquid nesciunt tenetur
+      praesentium perspiciatis porro debitis autem iusto magni eaque nobis. Amet dolores sapiente, asperiores hic,
+      officiis error soluta, explicabo veritatis totam at dignissimos repellendus fuga ipsam libero suscipit architecto
+      quibusdam ratione perspiciatis quidem a doloremque.</p>
+  </div>
+</body>
+
+</html>

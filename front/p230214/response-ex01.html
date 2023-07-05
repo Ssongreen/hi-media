@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+  <html lang="kor">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+    <style>
+      #wrap{
+        width: 970px;
+        background-color: green;
+        margin: 0 auto;
+      }
+        /* 미디어쿼리 media qurry
+        -일반 style 보다 아래 작성 
+        -미디어 타입 : all, screen(화면), print(프린터),        
+        
+        *max-width : 최대 너비, ~이하
+        *min-width : 최소 너비, ~이상
+        */
+      /* 
+      min-width: 1200px
+      -최소 너비 1200px일때
+      - 너비 : 1200ox 이상 
+      */
+        @media screen and (min-width: 1200px) {
+        #wrap {
+          font: 15px/2em serif;
+          width: 1200px;
+          background-color: darkviolet;
+        }
+    }
+      
+   /*max-width: 970px
+   - 최대 너비 970px 일 때
+   -너비 970px 이하  
+   */
+  @media screen and(min-width: 481px) and (max-width:970px) {
+    #wrap{
+      width: auto;
+      font: 12px sans-serif;
+      color: blue;
+    }
+  }
+    /*
+    max width: 480px
+    최대 너비 480px 일때
+    -너비 : 480px 
+     */
+     @media screen and(max-width: 480px){
+      #wrap{
+        font-size: 18px;
+        background-color: #ddd;
+      }
+     }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>Logo</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim quis quod veritatis quia. Quod dolorum suscipit consequuntur, qui quam ea voluptate incidunt quas! Aut atque voluptatum facere et non?</p>
+    </div>
+    
+  </body>
+  </html>

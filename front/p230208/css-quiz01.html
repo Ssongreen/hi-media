@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-quiz01</title>
+  <style>
+    div.box {
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: rgb(141, 46, 119);
+    }
+
+    input.text {
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .box:hover {
+      padding: 60px;
+      background-color: rgb(115, 211, 130);
+      /* 이미지를 크게 */
+      transform: scale(1.3, 1.3);
+      /* 직접 넣어주면, 자리 이동까지 되기에 트랜스 폼으로 사용 */
+      /* width: 170px;
+      height: 60px; */
+
+    }
+
+   input.text:active {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>문제 1</h2>
+  <div class="box">Mouse Over me</div>
+
+  <h2>문제 2</h2>
+  <input type="text" class="text" placeholder="Click Me To Get Focus">
+</body>
+
+</html>

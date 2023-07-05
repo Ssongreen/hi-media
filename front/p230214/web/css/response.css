@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* 760px 이하 */
+/* middle size : desktop view */
+@media screen and (max-width:760px) {
+  #wrap {
+    width: auto;
+  }
+
+  #container #content {
+    width: 63%;
+
+  }
+
+  #container #aside {
+    width: 37%;
+  }
+  #footer .btm_menu, 
+  #footer .copy{
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+}
+
+/* 480px 이하 */
+/* small size : mobile view */
+@media screen and (max-width:480px) {
+  /* 배너 이미지 지우기 
+  <먼저 실행 해주세용>!important */
+  #header{
+    background-image: none !important;
+    /* 배너 공간 없애기 */
+    padding-bottom: 0;
+  }
+  /* 로고 */
+  #header .logo{
+    position: static;
+    text-align: center;
+  }
+  /* 메뉴 */
+  #header .lnb_area{
+    position: static;
+  }
+  #header .lnb li{
+    float: none;
+  }
+  #header .lnb li a{
+    /* 메뉴 이미지 제거 */
+    background-image: none !important;
+    /* 텍스트 표시 */
+    text-indent: 0;
+    /* 폰트 지정 */
+    font: bold 18px/40px sans-serift;
+    /* 대문자 표시 */
+    text-transform: uppercase;
+    /* 언더라인 없애기 */
+    text-align: center;
+    /* 너비 full */
+    width: 100% !important;
+    /* 배경색 */
+    background-color: aliceblue;
+/*테두리 */
+    border-bottom: 2px solid #ccc  ;
+    /* 높이 */
+    height: 40px;
+    /* 폰트색 */
+    color: #000;
+  }
+  /* 선택된 메뉴 */
+  #header .lnb li a.on{
+    background-color: deeppink;
+    color: linen;
+  }
+  /* 롤 오버 */
+  #header .lnb li a:hover{
+    background-color: rgb(147, 86, 147);
+    color: #fff;
+  }
+  /* container  */
+  #container #content{
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 15px;
+  }
+  #container #aside{
+    float: none;
+    width: 100%;
+    padding: 20px
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>널리쉬와 전개 구문</title>
+</head>
+<body>
+  <h1>널리쉬와 전개 구문</h1>
+  <script>
+    /**
+     * 널리쉬 : 연산자
+     * 문법
+     * 값1 ?? 값2 ?? 값 3;
+     * 특정한 값이 들어가 있는 첫번째 항을 찾을 때까지 찾음
+     * 
+     * **/
+
+  const n1 = null, n2 = undefined, n3 = 5;
+  const result = n1 ?? n2 ?? n3;
+  console.log(result);
+  /**
+   * 전개 구문
+   * 
+   * **/
+  odd = [1,3,5];
+  console.log('일반적인 배열 출력',odd);
+  console.log('전개 구문',...odd);
+  even = [2,4,6];
+  Number = [odd,even];
+  console.log('새로운 배열',Number);
+  </script>
+</body>
+</html>

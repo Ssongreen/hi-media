@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 함수</title>
+</head>
+
+<body>
+  <h1>배열 함수</h1>
+  <script>
+    const even = [2, 4, 6];
+    document.write(even);
+
+    /**
+     * 요소 추가
+     * 맨 뒤 추가
+     * **/
+    even.push(9);
+    even.push(3, 11);
+    document.write(even);
+
+    //맨 앞에 추가
+    even.unshift(-1);
+    even.unshift(-5, 7);
+    document.write('<br>');
+    document.write(even);
+
+    //property 삭제
+    //맨뒤 에서 삭제
+    even.pop();
+    document.write(even);
+
+    //맨 앞에서 삭제
+    even.shift()
+    document.write(even);
+
+    /**
+     * foreach
+     * 배열을 순회하면서 반복적인 작업을 할때
+     * 반복문을 사용하지 않아도 사용한 효과
+     * 리턴 없음
+     * 문법
+     * 배열.foreach(callback(value[, index[,array]]));
+     * 
+     * **/
+
+    const student = ['홍씨', '박씨', '이씨'];
+
+    const info = function (value, index) {
+      document.write(`value : ${value}, index : ${index}`);
+
+    }
+
+    // 일반 for문
+    for (let i = 0; i < student.length; i++) {
+      info(student[i], i);
+    }
+    document.write('<br>');
+    student.forEach(info);
+    document.write('<br>');
+
+    const result = student.forEach(info);
+
+    document.write('<br>');
+    document.write('foreach 리턴값', result);
+    //문제
+    //foreach() 함수를 사용하여, 배열 even의 속성을 1증가
+    // 단 화살표 함수 사용
+    document.write('<br>');
+    const array_info = (value, index) => document.write(`value : ${value}, index : ${index}`);
+
+    student.forEach(array_info);
+
+    even.forEach(function (args) {
+      document.write(args + 1);
+    });
+    document.write('<br>')
+    even.forEach(args => document.write(args + 1));
+
+    /**
+     * map 
+     * foreach와 유사
+     * 리턴값 있음
+     * 배열을 리턴
+     * 
+     * **/
+    document.write('<br>');
+    student.map(info);
+    let arr_return = even.forEach(v => v+1);
+    document.write(arr_return);
+    
+    arr_return =even.map(v => v+1);
+    document.write(arr_return);
+  </script>
+</body>
+
+</html>

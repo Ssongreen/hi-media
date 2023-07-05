@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./p230420/pack"
+    ]
+}

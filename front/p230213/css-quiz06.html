@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-quiz</title>
+</head>
+<style>
+  *{
+    margin: 0;
+  }
+  
+  #wrap div{
+    font: sans-serif serif 12px;
+  }
+  #header ul{
+    list-style: none;
+    text-decoration: none;
+    font: sans-ferif bold 14px;
+  }
+  #header::after{
+    content: ' ';
+    display: block;
+    clear:both;
+  }
+  ul a{
+    float: left;
+    border: 3px solid black;
+    text-align: center;
+    height: 5px;
+    padding: 30px;
+    color: black;
+    line-height: 5px;
+    /* display: inline-block; */
+    margin: 10px;
+  }
+
+</style>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+        <li><a href="#">메뉴6</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

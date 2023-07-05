@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 함수</title>
+</head>
+
+<body>
+  <h1>문자열 함수</h1>
+
+  <script>
+    const today = 'Good!';
+    console.log(today.length);
+
+    console.log(today.replace('o', 'arrr'));
+
+    /**
+     * 특정 위치의 문자 추출
+     * 문법
+     * 문자열.substring(시작인덱스,끝인덱스)
+     * 끝 인덱스 제외
+     * 인덱스 사용 불가
+     * **/
+    console.log(today.substring(1, 4));
+
+    /**
+     * 문법
+     * 문자열.slice(시작인덱스, 끝 인덱스)
+     * 끝 인덱스 제외
+     * 인덱스 사용 가능
+     * **/
+
+    console.log(today.slice(1, 4));
+    console.log(today.slice(1, -1));
+    console.log(today.slice(-3));
+
+    /**
+     * 특정 문자 기준으로 분리(쪼개기)
+     * 배열 리턴
+     * 기준으로 사용된 문자는 결과에 없음
+     * 
+     * **/
+
+    console.log(today.split('d'));
+
+    /**
+     * 특정 문자 추가
+     * 문법 왼쪽에 추가
+     * 문자열.padStart(문자열 전체 길이, '추가할 문자');
+     * 
+     * **/
+
+    console.log(today.padStart(111, '@sth@'));
+    /**
+     * 문정 문자 찾기 true/false
+     * **/
+
+    console.log(today.includes('G'));
+    console.log(today.includes('Go'));
+    console.log(today.includes('hg'));
+
+    /**
+     * 특정 문자의 위치 리턴 index
+     * 있음 첫번째로 탐색된 문자의 인덱스 리턴
+     * 없음 -1 리턴
+     * **/
+
+    console.log(today.indexOf('o'));
+    console.log(today.indexOf('Go'));
+    console.log(today.indexOf('d'));
+    //반복
+    document.write(today.repeat(3));
+
+    //대소문자
+    document.write(today.toUpperCase());
+    document.write(today.toLocaleLowerCase());
+
+    //공백 제거
+    const say = 'good to see you?';
+    document.write('|' + say + '@');
+    document.write('|' + say.trimStart() + '@');
+    document.write('|' + say.trimEnd() + '@');
+    document.write('|' + say.trim() + '@');
+  </script>
+</body>
+
+</html>
